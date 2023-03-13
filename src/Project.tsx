@@ -16,7 +16,7 @@ const Project = (props: ProjectInterface): JSX.Element => (
         <div className="flex gap-x-4 items-center">
           <a
             href={props.github}
-            className="text-white bg-gray-800 px-4 py-2 rounded shadow text-sm flex items-center gap-x-2"
+            className="text-white bg-gray-700 px-4 py-2 rounded shadow text-sm flex items-center gap-x-2"
             target="_blank"
             rel="noreferrer"
           >
@@ -25,7 +25,7 @@ const Project = (props: ProjectInterface): JSX.Element => (
           </a>
           <a
             href={props.link}
-            className="text-white bg-gray-800 rounded shadow px-4 py-2 text-sm flex items-center gap-x-2"
+            className="text-white bg-gray-700 rounded shadow px-4 py-2 text-sm flex items-center gap-x-2"
             target="_blank"
             rel="noreferrer"
           >
