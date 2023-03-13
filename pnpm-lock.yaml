@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
+  '@types/react-icons': ^3.0.0
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@typescript-eslint/parser': ^5.0.0
   '@vitejs/plugin-react': ^3.1.0
@@ -21,6 +22,7 @@ specifiers:
   prettier: ^2.8.4
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-icons: ^4.8.0
   tailwindcss: ^3.2.7
   typescript: '*'
   vite: ^4.1.0
@@ -28,10 +30,12 @@ specifiers:
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.8.0_react@18.2.0
 
 devDependencies:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
+  '@types/react-icons': 3.0.0_react@18.2.0
   '@typescript-eslint/eslint-plugin': 5.53.0_cjo54hduev4bqhpjw5znwiokqu
   '@typescript-eslint/parser': 5.53.0_ycpbpc6yetojsgtrx3mwntkhsu
   '@vitejs/plugin-react': 3.1.0_vite@4.1.4
@@ -597,6 +601,15 @@ packages:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
       '@types/react': 18.0.28
+    dev: true
+
+  /@types/react-icons/3.0.0_react@18.2.0:
+    resolution: {integrity: sha512-Vefs6LkLqF61vfV7AiAqls+vpR94q67gunhMueDznG+msAkrYgRxl7gYjNem/kZ+as2l2mNChmF1jRZzzQQtMg==}
+    deprecated: This is a stub types definition. react-icons provides its own type definitions, so you do not need this installed.
+    dependencies:
+      react-icons: 4.8.0_react@18.2.0
+    transitivePeerDependencies:
+      - react
     dev: true
 
   /@types/react/18.0.28:
@@ -2418,6 +2431,13 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-icons/4.8.0_react@18.2.0:
+    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
@@ -2432,7 +2452,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

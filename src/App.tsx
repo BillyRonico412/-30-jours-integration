@@ -12,12 +12,24 @@ export interface ProjectInterface {
 const App = (): JSX.Element => (
   <div className="container mx-auto px-4 py-8">
     <div className="py-16 flex flex-col gap-y-8 items-center">
-      <p className="text-5xl text-center">30 jours d&apos;intégration</p>
-      <p className="text-2xl text-center">
+      <p className="text-5xl text-center text-gray-800 font-bold">
+        30 jours d&apos;intégration
+      </p>
+      <p className="text-lg lg:text-xl text-center text-gray-600 font-light">
         30 jours d&apos;intégration d&apos;IHM afin de me perfectionner sur le
-        développement Front End notament en CSS et en responsive design avec le
-        framework Tailwind CSS. Les IHM étaient proposé par le site
-        FrontEndMentor.
+        développement Front End notamment en CSS et en responsive design avec le
+        framework{' '}
+        <a href="https://tailwindcss.com/" className="underline text-blue-600">
+          Tailwind CSS
+        </a>
+        . Les IHM étaient des challenges proposé par le site{' '}
+        <a
+          href="https://www.frontendmentor.io/challenges"
+          className="underline text-blue-600"
+        >
+          FrontEndMentor
+        </a>
+        .
       </p>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-8 justify-items-center">

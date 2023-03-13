@@ -1,3 +1,4 @@
+import { FaGithub, FaEye } from 'react-icons/fa'
 import type { ProjectInterface } from './App'
 
 const Project = (props: ProjectInterface): JSX.Element => (
@@ -7,25 +8,29 @@ const Project = (props: ProjectInterface): JSX.Element => (
       alt={props.name}
       className="hover:scale-105 transition-transform object-cover w-full object-center"
     />
-    <div className="px-4 py-4 bg-gray-50 h-full">
+    <div className="px-4 py-4 h-full">
       <div className="flex flex-col items-center gap-y-2">
-        <p className="truncate">{props.name}</p>
+        <p className="truncate font-semibold text-gray-800 text-lg">
+          {props.name}
+        </p>
         <div className="flex gap-x-4 items-center">
           <a
             href={props.github}
-            className="ml-auto text-white bg-gray-800 px-2 py-1 rounded shadow"
+            className="text-white bg-gray-800 px-4 py-2 rounded shadow text-sm flex items-center gap-x-2"
             target="_blank"
             rel="noreferrer"
           >
+            <FaGithub />
             Github
           </a>
           <a
             href={props.link}
-            className="text-gray-800 underline px-2 py-1"
+            className="text-white bg-gray-800 rounded shadow px-4 py-2 text-sm flex items-center gap-x-2"
             target="_blank"
             rel="noreferrer"
           >
             View
+            <FaEye />
           </a>
         </div>
       </div>
